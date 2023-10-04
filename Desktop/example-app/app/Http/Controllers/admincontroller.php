@@ -48,6 +48,6 @@ class admincontroller extends Controller
             $_SESSION['rooms'][] = $newRoom;
         }
         echo '<script>alert("Thêm phòng thành công")</script>';
-        return view('adminpage');
+        return view('homepage');
     }
 }
