@@ -5,17 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product; // Thêm khai báo lớp Product
 use App\Models\BillDetail; // Thêm khai báo lớp BillDetail
-use App\Models\Slide;
+
 
 class PageController extends Controller
 {
 
 
-    public function getIndexAdmin()
-    {
-        $products = Product::all();
-        return view('pageadmin.admin')->with(['products' => $products, 'sumSold' => count(BillDetail::all())]);
-    }	
+    // public function getIndexAdmin()
+    // {
+    //     $products = Product::all();
+    //     return view('pageadmin.admin')->with(['products' => $products, 'sumSold' => count(BillDetail::all())]);
+    // }	
   
   public function getAdminAdd() {
     return view('pageadmin.formAdd');

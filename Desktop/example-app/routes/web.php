@@ -29,8 +29,8 @@ use App\Models\Baitap;
         return view('welcome');
     }); 
     Route::get('/trangchu', [KiemTraController::class, 'getindex']); 
-    Route::get('/trangchu2', [KiemTraController::class, 'gettrangchu']); 
-
+    Route::get('/chitiet/{id}', [KiemTraController::class, 'show'])->name('chitiet'); 
+    Route::get('/search', [KiemtraController::class, 'search'])->name('search'); 
     // Route::get('/admin', [PageController::class, 'getIndexAdmin']); 
     // Route::get('/admin-add-form', [PageController::class, 'getAdminAdd'])->name('add-product');														
     // Route::post('/admin-add-form', [PageController::class, 'postAdminAdd']);											

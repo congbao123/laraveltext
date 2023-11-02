@@ -157,7 +157,7 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
                             <button type="button" class="category-btn">All Categories</button>
-                            <form action="#" class="input-group">
+                            <form action="{{route('search')}}" method="GET" class="input-group">
                                 <input type="text" placeholder="What do you need?">
                                 <button type="button"><i class="ti-search"></i></button>
                             </form>
@@ -244,7 +244,7 @@
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Collection</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a hre  f="#">Contact</a></li>
                         <li><a href="#">Pages</a></li>
                     </ul>
                 </nav>
